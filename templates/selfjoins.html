@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>selfjoins</h1>
+        <table border="2px">
+            <tr>
+                <th>EName</th>
+                <th>MGR</th>
+                <th>sal</th>
+            </tr>
+    {% for emo in EMPMGROBJECTS %}
+        <tr>
+            <td>{{emo.ename}}</td>
+            <td>{{emo.mgr}}</td>
+            <td>{{emo.sal}}</td>
+        </tr>
+    {% endfor %}
+
+        </table>
+    </center>
+</body>
+</html>
