@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>emp_mgr_dept</h1>
+        <table border="2px">
+        <tr>
+            <td>ename</td>
+            <td>mgr</td>
+            <td>dname</td>
+            <td>SalGrade</td>
+        </tr>
+        {% for em in emp_mgr_dept %}
+         <tr>
+            <th>{{em.ename}}</th>
+            <th>{{em.mgr.ename}}</th>
+        
+            <th>{{em.deptno.dname}}</th>
+            <th>{{em.SalGrade}}</th>
+         </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
